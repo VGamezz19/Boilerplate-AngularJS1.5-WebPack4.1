@@ -1,0 +1,18 @@
+{
+  "env": {
+    "browser": true,
+    "es6": true
+  },
+  "extends": "airbnb-base",
+  "parser": "babel-eslint",
+  "plugins": ["angular", "import"],
+  "rules": {
+    "linebreak-style": 0,
+    "arrow-body-style": "off",
+    "arrow-parens": "off",
+    "comma-dangle": "off",
+    "global-require": "off",
+    "import/no-dynamic-require": "off",
+    "no-underscore-dangle": "off"
+  }
+}
