@@ -7,7 +7,13 @@ const root = angular
     HelloWorldComponent
   ])
   .component('acApp', {
-    template: '<hello-world></hello-world>',
+    template: '<hello-world binding-text="ctrlAp.text"></hello-world>',
+    controller: class appController {
+      constructor() {
+        this.text = 'HelloWorld Binding';
+      }
+    },
+    controllerAs: 'ctrlAp'
   });
 
 export default root;

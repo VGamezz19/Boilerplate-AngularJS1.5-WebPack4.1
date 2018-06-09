@@ -6,6 +6,9 @@ import HelloWorldTemplate from './HelloWorld.template.html';
 const MODULE_NAME = 'helloWorld.component';
 
 const HelloWorldComponent = {
+  bindings: {
+    bindingText: '='
+  },
   template: HelloWorldTemplate,
   controller: HelloWorldController,
   controllerAs: 'ctrl'
@@ -13,7 +16,6 @@ const HelloWorldComponent = {
 
 angular
   .module(MODULE_NAME, [])
-  .controller('HelloWorldController', HelloWorldController)
   .component('helloWorld', HelloWorldComponent);
 
 export default MODULE_NAME;
