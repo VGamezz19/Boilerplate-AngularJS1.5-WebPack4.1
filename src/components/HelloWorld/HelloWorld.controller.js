@@ -1,12 +1,12 @@
-export default class HelloWorldController {
-  constructor() {
-    this.helloWorld = 'Hello World';
-    this.goodBy = 'Good By';
-  }
+// export default class HelloWorldController {
+//   constructor() {
+//     this.helloWorld = 'Hello World';
+//     this.goodBy = 'Good By';
+//   }
 
-  onClick() {
-    const { bindingText, helloWorld, goodBy } = this;
+// //   onClick() {
+// //     const { bindingText, helloWorld, goodBy } = this;
 
-    this.bindingText = bindingText === helloWorld ? goodBy : helloWorld;
-  }
-}
+// //     this.bindingText = bindingText === helloWorld ? goodBy : helloWorld;
+// //   }
+// }

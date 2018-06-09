@@ -1,4 +1,4 @@
 <div>
-    <button ng-click="ctrl.onClick()">Click Event</button>
-    <span>{{ctrl.bindingText}}</span>
+    <button ng-click="$ctrl.onClick({text: $ctrl.text})">Click Event</button>
+    <span>{{$ctrl.text}}</span>
 </div>

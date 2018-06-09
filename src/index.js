@@ -1,19 +1,17 @@
 import angular from 'angular';
 import HelloWorldComponent from './components/HelloWorld';
 
+import template from './app.component.html';
+import controller from './app.controller';
 
-const root = angular
+const appComponent = {
+  template,
+  controller,
+  controllerAs: 'app'
+};
+
+export default angular
   .module('app', [
     HelloWorldComponent
   ])
-  .component('acApp', {
-    template: '<hello-world binding-text="ctrlAp.text"></hello-world>',
-    controller: class appController {
-      constructor() {
-        this.text = 'Hello World';
-      }
-    },
-    controllerAs: 'ctrlAp'
-  });
-
-export default root;
+  .component('acApp', appComponent);
