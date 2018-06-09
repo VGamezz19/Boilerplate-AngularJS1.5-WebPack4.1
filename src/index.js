@@ -1,17 +1,13 @@
 import angular from 'angular';
-import { HelloWorld } from './components/HelloWorld';
+import HelloWorldComponent from './components/HelloWorld';
+// import { AppComponent } from './app.component';
 
-angular.module('app', [HelloWorld]);
+const root = angular
+  .module('app', [])
+  .component('helloWorld', HelloWorldComponent);
 
-// .controller('MainCtrl', function MainCtrl() {
-//   this.hero = {
-//     name: 'World'
-//   };
-// }).component('heroDetail', {
-//   template,
-//   // controller: require(),
-//   controllerAs: 'ctrl',
-//   bindings: {
-//     hero: '='
-//   }
-// });
+// console.log(HelloWorldComponent);
+
+document.addEventListener('DOMContentLoaded', () => angular.bootstrap(document, ['app']));
+
+export default root;
