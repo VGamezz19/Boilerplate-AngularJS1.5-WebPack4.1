@@ -10,7 +10,7 @@ const root = angular
     template: '<hello-world binding-text="ctrlAp.text"></hello-world>',
     controller: class appController {
       constructor() {
-        this.text = 'HelloWorld Binding';
+        this.text = 'Hello World';
       }
     },
     controllerAs: 'ctrlAp'
