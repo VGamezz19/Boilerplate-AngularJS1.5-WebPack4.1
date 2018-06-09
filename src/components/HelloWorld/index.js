@@ -1,18 +1,19 @@
+import angular from 'angular';
 import './HelloWorld.styles.less';
 import HelloWorldController from './HelloWorld.controller';
 import HelloWorldTemplate from './HelloWorld.template.html';
 
-// const MODULE_NAME = 'helloWorl.component';
+const MODULE_NAME = 'helloWorld.component';
 
-export default {
+const HelloWorldComponent = {
   template: HelloWorldTemplate,
   controller: HelloWorldController,
-  controllerAs: 'ctr'
+  controllerAs: 'ctrl'
 };
 
-// angular
-//   .module(MODULE_NAME, [])
-//   .controller('HelloWorldController', HelloWorldComponent)
-//   .component('helloWorld', HelloWorldComponent);
+angular
+  .module(MODULE_NAME, [])
+  .controller('HelloWorldController', HelloWorldController)
+  .component('helloWorld', HelloWorldComponent);
 
-// export default MODULE_NAME;
+export default MODULE_NAME;

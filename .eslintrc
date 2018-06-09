@@ -8,6 +8,7 @@
   "plugins": ["angular", "import"],
   "rules": {
     "linebreak-style": 0,
+    "no-console": 0,
     "arrow-body-style": "off",
     "arrow-parens": "off",
     "comma-dangle": "off",
