@@ -1,5 +1,5 @@
 import angular from 'angular';
-import './HelloWorld.styles.less';
+import './HelloWorld.style.less';
 // import HelloWorldController from './HelloWorld.controller';
 import HelloWorldTemplate from './HelloWorld.template.html';
 
@@ -12,8 +12,6 @@ const HelloWorldComponent = {
     onClick: '&'
   },
   template: HelloWorldTemplate,
-  //   controller: HelloWorldController,
-//   controllerAs: 'ctrl'
 };
 
 angular

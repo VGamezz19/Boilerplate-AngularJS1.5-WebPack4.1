@@ -1,4 +1,14 @@
-<hello-world 
-    on-click='app.onChildClick(app.text)'
-    text='app.text'>
-</hello-world>
+<div class="app">
+    <header class="app-header">
+        <img src="{{app.logo}}" class="app-logo" alt="logo" />
+        <h1 class="app-title">Welcome to AngularJS 1.5</h1>
+    </header>
+    <p class="app-intro">
+        To get started, edit
+        <code>src/app</code> and save to reload.
+    </p>
+    <hello-world 
+        on-click='app.onChildClick(app.text)' 
+        text='app.text'>
+    </hello-world>
+</div>

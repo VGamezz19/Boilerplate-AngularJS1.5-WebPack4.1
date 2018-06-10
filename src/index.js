@@ -3,6 +3,7 @@ import HelloWorldComponent from './components/HelloWorld';
 
 import template from './app.component.html';
 import controller from './app.controller';
+import './app.style.less';
 
 const appComponent = {
   template,

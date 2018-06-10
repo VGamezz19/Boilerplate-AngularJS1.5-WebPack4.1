@@ -1,6 +1,7 @@
 const webpack = require('webpack');
 
 module.exports = {
+  // https://webpack.js.org/configuration/devtool/
   devtool: 'eval-source-map',
   devServer: {
     port: 3000,
