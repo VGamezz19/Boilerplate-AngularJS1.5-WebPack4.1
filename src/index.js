@@ -5,6 +5,8 @@ import template from './app.component.html';
 import controller from './app.controller';
 import './app.style.less';
 
+// https://code.angularjs.org/1.5.5/docs/guide/component
+
 const appComponent = {
   template,
   controller,
