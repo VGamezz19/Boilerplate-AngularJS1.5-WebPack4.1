@@ -1,34 +1,32 @@
 const webpack = require('webpack');
+const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 module.exports = {
-  // https://webpack.js.org/configuration/devtool/
-  devtool: 'eval-source-map',
   devServer: {
     port: 3000,
-    historyApiFallback: true
+    historyApiFallback: true,
+    inline: true,
+    hot: true
+  },
+  // https://webpack.js.org/configuration/devtool/
+  devtool: 'source-map',
+  resolve: {
+    extensions: ['.js', '.css', '.less']
   },
   module: {
     rules: [
       {
-        test: /\.less$/,
-        use: [{
-          loader: 'style-loader'
-        }, {
-          loader: 'css-loader',
-          options: {
-            sourceMap: true
-          }
-        }, {
-          loader: 'less-loader',
-          options: {
-            sourceMap: true
-          }
-        }]
+        test: /(\.less|\.css)$/,
+        use: ExtractTextPlugin.extract({
+          fallback: 'style-loader',
+          use: ['css-loader', 'less-loader']
+        })
       }]
   },
   plugins: [
     new webpack.NamedModulesPlugin(),
     new webpack.HotModuleReplacementPlugin(),
+    new ExtractTextPlugin('style.css')
   ],
   // Some libraries import Node modules but don't use them in the browser.
   // Tell Webpack to provide empty mocks for them so importing them works.
