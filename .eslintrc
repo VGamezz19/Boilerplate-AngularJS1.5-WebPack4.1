@@ -1,19 +1,53 @@
 {
   "env": {
-    "browser": true,
-    "es6": true
+      "es6": true,
+      "browser": true,
+      "node": true,
+      "jquery": true
+  },
+  "globals": {
+      "angular": true,
+      "com": true,
+      "GGBApplet": true,
+      "tinymce": true,
+      "tinyMCE": true,
+      "gapi": true,
+      "google": true
   },
   "extends": "airbnb-base",
   "parser": "babel-eslint",
-  "plugins": ["angular", "import"],
+  "plugins": ["angular"],
+  "parserOptions": {
+      "sourceType": "module"
+  },
   "rules": {
-    "linebreak-style": 0,
-    "no-console": 0,
     "arrow-body-style": "off",
     "arrow-parens": "off",
     "comma-dangle": "off",
     "global-require": "off",
     "import/no-dynamic-require": "off",
-    "no-underscore-dangle": "off"
+    "no-underscore-dangle": "off",
+    "class-methods-use-this": "off",
+    "linebreak-style": [
+    "error",
+    "windows"
+    ],
+    "func-style": [
+    1,
+    "expression"
+    ],
+    "valid-typeof":2,
+    "no-unreachable": 2,
+    "no-dupe-args": 2,
+    "no-dupe-keys": 2,
+    "no-sparse-arrays":2,
+    "no-func-assign": 2,
+    "no-redeclare": 2,
+    "no-self-assign":2,
+    "no-unexpected-multiline": 2,
+    "no-console": 1,
+    "no-debugger": 1,
+    "no-undef": 2,
+    "no-unused-vars": 2
   }
 }
