@@ -16,7 +16,7 @@
 
 ### Dev Start
 
-`npm run watch` or `yarn watch`
+`npm run start` or `yarn start`
 
 in `localhost:3000`
 
