@@ -5,8 +5,10 @@
   "main": "index.js",
   "scripts": {
     "lint": "eslint src/ --ext .js",
+    "start": "webpack-dev-server --env.mode development",
     "build": "webpack --env.mode production",
-    "watch": "webpack-dev-server --env.mode development --hot --inline"
+    "build:dev": "webpack --env.mode development",
+    "server": "http-server ./build"
   },
   "dependencies": {
     "angular": "1.5.5",
