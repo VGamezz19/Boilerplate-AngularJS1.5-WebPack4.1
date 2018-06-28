@@ -21,7 +21,7 @@ module.exports = {
         parallel: true,
         sourceMap: true,
         uglifyOptions: {
-          ecma: 6,
+          ecma: 5,
           mangle: true,
           // Eliminate comments
           comments: false,
